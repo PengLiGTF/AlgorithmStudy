@@ -21,12 +21,13 @@ public class InsertSortTest extends TestCase
 	@Test
 	public void testIsertSort()
 	{
-		int[] numbers = new int[] { 4, 6, 100, 3, 9, 8, 10, 2, 99, 82, 67 };
-		int[] actuals = InsertSort.insertSort(numbers);
+		int[] numbers = new int[] { 4, 6, 100, 3, 9, 8, 10, 2, 99, 1, 82, 67 };
+		int[] actuals = InsertSort.insertSort2(numbers);
+		// int[] actuals = InsertSort.insertSort2(numbers);
 
 		System.out.println(Arrays.toString(actuals));
 
-		int[] expecteds = new int[] { 2, 3, 4, 6, 8, 9, 10, 67, 82, 99, 100 };
+		int[] expecteds = new int[] { 1, 2, 3, 4, 6, 8, 9, 10, 67, 82, 99, 100 };
 
 		Assert.assertArrayEquals(expecteds, actuals);
 
