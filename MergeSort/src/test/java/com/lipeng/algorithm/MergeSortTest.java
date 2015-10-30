@@ -26,6 +26,7 @@ public class MergeSortTest extends TestCase
 
 		int[] expected = new int[] { 1, 4, 22, 47, 99, 333, 388 };
 
+//		Assert.assertArrayEquals(expected, a);
 		Assert.assertArrayEquals(expected, a);
 
 	}
